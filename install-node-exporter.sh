@@ -23,7 +23,7 @@ EOF
 
 sudo systemctl daemon-reload
 sudo systemctl start node_exporter
-sudo systemctl status node_exporter
+#sudo systemctl status node_exporter
 sudo systemctl enable node_exporter
 
 cat <<EOF | sudo tee /etc/prometheus/prometheus.yml 
@@ -41,4 +41,4 @@ scrape_configs:
 EOF
 
 sudo systemctl restart prometheus
-sudo systemctl status prometheus
+#sudo systemctl status prometheus
