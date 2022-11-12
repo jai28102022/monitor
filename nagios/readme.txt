@@ -16,3 +16,7 @@ sudo systemctl restart nagios4
 ## http://PublicIP/nagios4/
 ## User: nagiosadmin
 ## Current Status > Hosts > localhost 
+
+
+wget https://raw.githubusercontent.com/jai28102022/monitor/main/nagios/atos-server-00.cfg
+sudo mv atos-server-00.cfg /etc/nagios4/objects/atos-server-00.cfg
