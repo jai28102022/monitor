@@ -20,3 +20,6 @@ sudo systemctl restart nagios4
 
 wget https://raw.githubusercontent.com/jai28102022/monitor/main/nagios/atos-server-00.cfg
 sudo mv atos-server-00.cfg /etc/nagios4/objects/atos-server-00.cfg
+wget https://raw.githubusercontent.com/jai28102022/monitor/main/nagios/nagios.cfg
+sudo mv nagios.cfg /etc/nagios4/nagios.cfg
+sudo systemctl restart nagios4.service 
